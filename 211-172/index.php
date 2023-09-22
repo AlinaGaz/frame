@@ -52,15 +52,15 @@
       <header>
     <main class = "content">
         <div class="container-fluid">
-            <form>
+            <form method="POST" action="https://httpbin.org/post">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" name="emale" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -69,27 +69,12 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
         </div class="container">
+        <a href="get.php?key=t">Toch</a>
         <?php
-          // $a=6;
-          // for($i=0; $i<$a; $i++){
-          //   echo $i. '<br>';
-          // };
-          // $arr=[1,2,3,4];
-          // echo $arr[0];
-           $array=[
-            'd'=>1,
-            'r'=>2,
-            'g'=>3,
-            'e'=>4
-          ];`
-          // echo $array['d'];
-
-          foreach($array as $key=>$value){
-            echo $key. '='. $value. '<br>';
-          }
+        // echo $_POST['email'];
         ?>
         </div>
-        
+ 
     </main>
     <footer class = "footer">
         <h4>Газизова Алина</h4>
